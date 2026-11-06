@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - PropertyPlus</title>
 
+    <style>
+        img{
+            height: auto;
+        }
+    </style>
+
      {% load static %}
+     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 <body>
-    <h1>Welcome to PropertyPlus!</h1>
+    <h1 style="text-align: center;">Welcome to PropertyPlus!</h1>
+    <a href="{% url 'about' %}">About Us!</a>
+    <a href="{% url 'contact' %}">Contact Us</a>
+    <a href="{% url 'services' %}">Our Services</a>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ipsam quibusdam quae hic at iure impedit blanditiis officia! Obcaecati ex totam cupiditate ipsam, laboriosam similique ducimus sint enim aperiam deserunt.
     Libero architecto quia repudiandae nulla ut corrupti vero nobis cumque at, amet obcaecati tempore non, alias animi fuga suscipit doloribus in. Ipsa, nulla doloribus! Eum deleniti blanditiis odit dolores quas!
     Iure eum dignissimos deserunt fugiat exercitationem! Ipsum est cumque expedita iste maxime beatae reiciendis consequuntur nihil rerum quas in optio, magnam doloribus eveniet fuga error soluta mollitia praesentium quia doloremque.</p>

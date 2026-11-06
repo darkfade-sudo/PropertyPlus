@@ -5,13 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page - PropertyPlus</title>
     {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </head>
 <body>
     <h1>About Us!</h1>
+    <a href="{% url 'contact' %}">Contact Us</a>
+    <a href="{% url 'index' %}">Homepage</a>
+    <a href="{% url 'services' %}">Our Services</a>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea debitis incidunt harum hic, sit similique dolorum accusantium placeat sint et corrupti? Tenetur veniam vitae neque velit voluptates. Hic, eos aut!
     Officiis, quasi cumque laudantium, sed, vero vel necessitatibus magnam ex autem fuga maiores nihil quisquam quam molestiae molestias? Quis saepe iure hic! Nesciunt sequi quod deleniti amet quae aut incidunt!
     Id inventore delectus repellendus odio quo consectetur excepturi sed ad obcaecati in vitae similique nostrum iusto temporibus, nisi commodi optio, maiores voluptatem ea, magni recusandae doloribus enim? Molestias, laboriosam cupiditate?</p>
 
     <img src="{% static 'images/car.png' %}" alt="The car on the road" width="600">
+
+    <br><br><br>
+
+    <div class="container">
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Fullname</th>
+                    <th>Email Address</th>
+                    <th>Telephone Number</th>
+
+
+                </tr>
+
+
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mark Doe</td>
+                    <td>mark@gmail.com</td>
+                    <td>0745634251</td>
+
+
+
+                </tr>
+
+                <tr>
+                    <td>Felix Dadivit</td>
+                    <td>felix@gmail.com</td>
+                    <td>0712345623</td>
+
+
+                </tr>
+                <tr>
+                    <td>Leone Trops</td>
+                    <td>leone@gmail.com</td>
+                    <td>0714253426</td>
+
+
+
+                </tr>
+
+                <tr>
+                    <td>Jay Celeste</td>
+                    <td>jay@gmail.com</td>
+                    <td>0789654132</td>
+
+
+                </tr>
+
+
+
+
+
+
+
+
+            </tbody>
+
+
+
+
+
+
+
+        </table>
+
+
+
+
+    </div>
 </body>
 </html>
